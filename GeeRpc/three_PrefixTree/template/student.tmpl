@@ -1,0 +1,9 @@
+<!-- templates/student.tmpl -->
+<html>
+<body>
+    <p>hello, {{.title}}</p>
+    {{range $index, $ele := .student }}
+    <p>{{ $index }}: {{ $ele.name }} is {{ $ele.age }} years old</p>
+    {{ end }}
+</body>
+</html>
